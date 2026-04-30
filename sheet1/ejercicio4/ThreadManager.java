@@ -13,7 +13,7 @@ public class ThreadManager {
         while (true) {
             System.out.print("> ");
             String line = sc.nextLine();
-            if (line.equalsIgnoreCase('salir')) {
+            if (line.equalsIgnoreCase("salir")) {
                 break;
             }
             System.out.println("Creando hilo con número: " + counter); // Línea de depuración
