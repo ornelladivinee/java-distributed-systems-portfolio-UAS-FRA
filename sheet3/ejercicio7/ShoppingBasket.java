@@ -43,4 +43,10 @@ public class ShoppingBasket {
         return basketName;
     }
 
+
+    public void addItem(ShoppingItem shoppingItem) {
+        items.add(shoppingItem);
+    }
+
+
 }
