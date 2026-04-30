@@ -15,12 +15,19 @@ public class Main {
         ShoppingItem item = basket.searchItem("Fundation");
         if (item != null) {
             System.out.println("Item found: " + item.getName() + ", Price: " + item.getPrice() + ", Quantity: " + item.getQuantity());
-            
+        
+            ShoppingItem item1 = basket.searchItem("Mascara");
+            if (item1 != null) {
+                System.out.println("Item found: " + item1.getName() + ", Price: " + item1.getPrice() + ", Quantity: " + item1.getQuantity());        
+
+
+
             // CAMBIAR LA CANTIDAD DE UN ARTICULO
-            item.changeQuantity(12);
-            System.out.println("Updated Quantity for " + item.getName() + ": " + item.getQuantity());
+            item1.changeQuantity(12);
+            System.out.println("Updated Quantity for " + item1.getName() + ": " + item1.getQuantity());
         } else {
             System.out.println("Item not found."); //control de excepciones
         }
     } 
+    }
 }
