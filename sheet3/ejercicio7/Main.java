@@ -12,15 +12,14 @@ public class Main {
         basket.addItem(new ShoppingItem("Eyeliner", 14.99, 7));
         
         // BUSCAR UN ARTICULO POR NOMBRE
-        ShoppingItem item = basket.searchItem("Fundation");
-        if (item != null) {
-            System.out.println("Item found: " + item.getName() + ", Price: " + item.getPrice() + ", Quantity: " + item.getQuantity());
+        ShoppingItem item0 = basket.searchItem("Fundation");
+        if (item0 != null) {
+            System.out.println("Item found: " + item0.getName() + ", Price: " + item0.getPrice() + ", Quantity: " + item0.getQuantity());
         
             ShoppingItem item1 = basket.searchItem("Mascara");
             if (item1 != null) {
-                System.out.println("Item found: " + item1.getName() + ", Price: " + item1.getPrice() + ", Quantity: " + item1.getQuantity());        
-
-
+                System.out.println("Item found: " + item1.getName() + ", Price: " + item1.getPrice() + ", Quantity: " + item1.getQuantity());
+       
 
             // CAMBIAR LA CANTIDAD DE UN ARTICULO
             item1.changeQuantity(12);
