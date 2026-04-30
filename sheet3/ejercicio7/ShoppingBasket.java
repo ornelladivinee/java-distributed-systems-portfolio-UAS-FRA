@@ -13,7 +13,7 @@ public class ShoppingBasket {
     // constructor 
     public ShoppingBasket(String name) {
         this.basketName = name;
-        this.items = new ArrayList<>();
+        ShoppingBasket.items = new ArrayList<>();
 }
 
 
