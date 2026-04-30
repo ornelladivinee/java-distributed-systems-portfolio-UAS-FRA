@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "sheet3.ejercicio7.Main",
+            "projectName": "java-distributed-systems-portfolio-UAS-FRA-2_deb5eb07"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
