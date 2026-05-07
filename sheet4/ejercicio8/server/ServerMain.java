@@ -13,7 +13,26 @@ Sheet4/
     └── BasketProxy.java (El "impostor" que habla con el socket) : Proxy/Stub for remote invocation 
     */
 
+/* 
+**** clase principal del server ****
+PUNTO PRINCIPAL DEL SERVIDOR.
 
+SE ENCARGA DE:
+- ESCUCHAR PETICIONES UDP
+- RECIBIR MENSAJES SERIALIZADOS
+- DESERIALIZAR OBJETOS Message
+- IDENTIFICAR EL BASKET CORRECTO
+- EJECUTAR EL METODO SOLICITADO
+- ENVIAR EL RESULTADO AL CLIENTE
+
+EL SERVIDOR CONTIENE LOS OBJETOS REALES Basket.
+
+Responsable de:
+iniciar servidor UDP,
+esperar mensajes,
+manejar comunicación,
+llamar métodos en Basket.
+*/
 
 package sheet4.ejercicio8.server;
 

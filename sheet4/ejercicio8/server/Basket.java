@@ -1,3 +1,19 @@
+/* 
+REPRESENTA LA IMPLEMENTACION REAL DE LA SHOPPING BASKET.
+
+ESTA CLASE SOLO EXISTE EN EL SERVIDOR
+Y CONTIENE LA LOGICA DE NEGOCIO REAL.
+
+EL CLIENTE NUNCA ACCEDE DIRECTAMENTE A ESTA CLASE.
+LAS OPERACIONES SON INVOCADAS REMOTAMENTE
+MEDIANTE EL BasketProxy.
+
+Responsable de:
+lógica real de negocio,
+almacenar items,
+modificar cesta.
+*/
+
 package sheet4.ejercicio8.server;
 
 public class Basket {
